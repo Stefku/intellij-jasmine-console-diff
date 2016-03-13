@@ -29,7 +29,7 @@ public class JasmineOutputFilter implements Filter {
         } else {
             String expected = match.expected();
             String toEqual = match.toEqual();
-            return new Result(0, 10, createLink(expected, toEqual));
+            return new Result(startPoint, endPoint, createLink(expected, toEqual));
         }
     }
 
